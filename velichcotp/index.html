@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -6,94 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Tigre y Mariposa</title>
-
-<!--Vinculo a CSS-->     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/estilos.css"> 
-<!--Estilos de Google fonts--> 
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap" rel="stylesheet">
 </head>
 
-<body class="poppins-regular" id= "contenido">
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+    header {
+        background: #007bff;
+        color: white;
+        padding: 10px 0;
+    }
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    header nav ul li {
+        margin: 0 15px;
+    }
+    header nav a {
+        color: white;
+        text-decoration: none;
+    }
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #007bff;
+        color: white;
+    }
+    footer a {
+        color: white;
+    }
+</style>
 
-<header>
-    <div class="respmenu">
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-times"></i>
-        </label>
-        <nav>
-            <ul>
-                <li><a href="index.html">Los escritores</a></li>
-                <li><a href="poemas.html">Poemas</a></li>
-                <li><a href="cuentos.html">Cuentos</a></li>
-                <li><a href="catalogo.html">Catalogo</a></li>
-                <li><a href="exposiciones.html">Exposiciones</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Tigre y Mariposa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="poemas.html">Poemas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cuentos.html">Cuentos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="exposiciones.html">Exposiciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </div>
-</header>
+    </header>
 
-<main>
-    <h1>
-        Titulo
-    </h1>
 
-    <article class="columnas">
-        <h2>
-        ¡Bienvenidos!
-        </h2>
-        <p> 
-            Primer parrafo
-        </p> 
-        <p> 
-            segundo parrafo
-        </p>
+<div class="container">
+    <h1>Tigre y Mariposa</h1>
+    <article>
+        <h2>¡Bienvenidos!</h2>
+        <p>En Tigre y Mariposa celebramos la poesía, la prosa y el arte en todas sus formas. Nuestro objetivo es promover la creatividad y los valores humanos a través de la literatura y las artes visuales.</p>
     </article>
 
-    <section class="columnas">
+    <div class="row mt-4">
+        <div class="col-4">
+            <h3>Obras Destacadas</h3>
+            <p>Descubre nuestras publicaciones más recientes, desde poesía conmovedora hasta cuentos reflexivos.</p>
+            <a href="catalogo.html" class="btn btn-primary">Ver Catálogo</a>
+        </div>
 
-        <div class="contenido">
+        <div class="col-4">
+            <h3>Próximos Eventos</h3>
+            <p>Únete a nosotros en nuestras próximas exposiciones y lecturas. ¡No te lo pierdas!</p>
+            <a href="exposiciones.html" class="btn btn-secondary">Ver Eventos</a>
+        </div>
 
-            <article class="columna1">
-                          
-                <h3>Subtitulo </h3>
-                    <p> 
-                        parrafo3
-                    </p>                    
-            </article>
+        <div class="col-4">
+            <h3>Contacto</h3>
+            <p>¿Tienes preguntas o deseas más información? Contáctanos.</p>
+            <a href="mailto:mariela.peters@gmail.com" class="btn btn-success">Escribirnos</a>
+        </div>
+    </div>
+</div>
 
-            <article class="columna2" >                       
-                <h3>subtitulo </h3>
-                    <p>
-                        parrafo4 
-                    </p>
-            </article>
+<footer>
+    <address>
+        <p class="letras">Para contactarse con nosotros escribir a                    
+            <a href="mailto:mariela.peters@gmail.com">mariela.peters@gmail.com</a>
+        </p>
+    </address>
+</footer>
 
-            <article class="columna3"> 
-                          
-                <h3>subtitulo</h3>
-                    <p>
-                        parrafo 5
-                    </p>                 
-            </article>
-        </div>    
-
-    </section>
-</main>
-
-    <footer >
-        <address>
-            <p class="letras">Para contactarse con nosotros escribir a                   
-                <a href="mailto:mariela.peters@gmail.com">mariela.peters@gmail.com</a>
-            </p>
-        </address>
-    </footer>
-
-                                    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
