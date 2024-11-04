@@ -1,13 +1,24 @@
+// Media query para pantallas grandes
 @media (min-width: 992px ) {
     .alto-100 {
         height: 100vh;
     }
 }
 
+// Definición de la fuente
 $font-family-sans-serif: "Poppins", sans-serif;
 
+// Añadiendo el estilo para el botón de selector de archivos
+::file-selector-button {
+    font: inherit; // Mantiene la herencia de la fuente
+    appearance: button; // Propiedad estándar
+    -webkit-appearance: button; // Prefijo para compatibilidad
+}
+
+// Estilo para imágenes dentro de un contenedor flexible
 .d-flex img {
      width: 50px;
 }
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";

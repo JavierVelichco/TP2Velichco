@@ -14,49 +14,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        header {
-            background: #007bff;
-            color: white;
-            padding: 10px 0;
-        }
-        header nav a {
-            color: white;
-            text-decoration: none;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #007bff;
-            color: white;
-        }
-        footer a {
-            color: white;
-        }
-    </style>
 </head>
 
-<body>
+<body class="d-flex flex-column vh-100" style="background-image: url('./img/tympoemafondo.png'); background-size: cover; background-position: center;">
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="bg-primary text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary "> <!-- Barra de navegación de Bootstrap -->
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Tigre y Mariposa</a>
+                <a class="navbar-brand" href="index.html">Tigre y Mariposa</a> <!-- Nombre de la marca -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span> <!-- Icono del botón para dispositivos móviles -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav"> <!-- Lista de navegación -->
                         <li class="nav-item"><a class="nav-link" href="poemas.html">Poemas</a></li>
                         <li class="nav-item"><a class="nav-link" href="cuentos.html">Cuentos</a></li>
                         <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
                         <li class="nav-item"><a class="nav-link" href="exposiciones.html">Exposiciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="autorpagina.html">Autor</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,53 +42,138 @@
     </header>
 
     <main class="container my-5">
-        <h1 class="text-center">Tigre y Mariposa</h1>
+        <h1 class="fw-bold text-center">Selección de poemas</h1>
+        <br>
 
         <article class="mb-4">
-            <h2>¡Bienvenidos!</h2>
-            <p>Este es un espacio dedicado a la poesía y la creatividad. Aquí encontrarás obras que inspiran y conmueven.</p>
-        </article>
 
-        <section>
-            <h2>Poemas Destacados</h2>
+                    <h4 class="fw-bold text-center">Este es un espacio dedicado a la expresión y la creatividad. Aquí semana a semana encontrarás obras que inspiran y conmueven.</h4>
+        </article>
+        <br>
+             
             <div class="row">
                 <article class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">El Susurro del Viento</h3>
-                            <p class="card-text">El viento lleva consigo secretos y susurros de tiempos lejanos, donde las hojas cuentan historias de amor y desamor.</p>
+                    
+                        <div class="card bg-danger-subtle card-body mx-auto p-2">
+                            <h3 class="card-title text-center fw-bold mx-auto p-2">El Susurro del Viento</h3>
+                            <p class="card-text text-center">
+                                El viento lleva consigo secretos<br>
+                                y susurros de tiempos lejanos,<br>
+                                donde las hojas cuentan historias<br>
+                                de amor y desamor,<br>
+                                tejiendo memorias en su danza sutil.</p>
+                                <p class="card-text text-center">
+                                Susurra entre ramas y campos dorados,<br>
+                                acaricia rostros, lleva risas,<br>
+                                y a veces, un lamento,<br>
+                                como un eco de almas perdidas,<br>
+                                buscando consuelo en su paso errante.</p>
+                                <p class="card-text text-center">
+                                En cada soplo, un suspiro oculto,<br>
+                                un beso que se escapa,<br>
+                                un adiós que nunca se pronuncia.<br>
+                                Las flores se inclinan ante su canto,<br>
+                                y los ríos murmuran secretos<br>
+                                que solo el viento sabe contar.</p>
+                                <p class="card-text text-center">
+                                El viento es testigo de promesas,<br>
+                                de miradas que se cruzaron,<br>
+                                de abrazos que se perdieron<br>
+                                en la niebla del tiempo.<br>
+                                Es un viajero incansable,<br>
+                                un poeta que recorre el mundo,<br>
+                                dejando tras de sí la fragancia<br>
+                                de lo vivido, lo soñado.</p>
+                                <p class="card-text text-center">
+                                Así, cuando escuches su melodía,<br>
+                                detente un momento,<br>
+                                y permite que te envuelva,<br>
+                                porque en el susurro del viento<br>
+                                hay un rincón de cada corazón,<br>
+                                un eco de vida,<br>
+                                una historia que espera ser contada.</p><br>
                         </div>
-                    </div>
+                   
                 </article>
 
                 <article class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Mariposa en el Jardín</h3>
-                            <p class="card-text">En el jardín de colores brillantes, una mariposa danza con gracia, recordándonos la belleza efímera de la vida.</p>
+                   
+                        <div class="card bg-danger-subtle mx-auto p-2">
+                            <h3 class="card-title fw-bold text-center mx-auto p-2">Mariposa en el Jardín</h3><br>
+                            <p class="card-text text-center">
+                                En el jardín de colores brillantes,<br>
+                                una mariposa danza con gracia,<br>
+                                sus alas, un lienzo de mil matices,<br>
+                                pintando el aire con suaves caricias.</p>
+
+                                 <p class="card-text text-center">
+                                Flota entre flores, un delicado susurro,<br>
+                                buscando el néctar que el sol ha ofrecido,<br>
+                                mientras el viento juega con su vuelo,<br>
+                                recordándonos la belleza efímera de la vida.</p>
+                                <p class="card-text text-center">
+                                Bajo el cálido abrazo de un día radiante,<br>
+                                cada aleteo es un poema que se escribe,<br>
+                                un instante capturado en el tiempo,<br>
+                                un recordatorio de que todo es transitorio.</p>
+                                <p class="card-text text-center">
+                                Sus movimientos son un baile sutil,<br>
+                                un homenaje a lo efímero y bello,<br>
+                                como la vida misma, que brilla y se apaga,<br>
+                                dejando en su paso un rastro de sueños.</p>
+                                <p class="card-text  text-center">
+                                Mariposa en el jardín, símbolo de esperanza,<br>
+                                en tu vuelo encontramos el eco del amor,<br>
+                                un canto a la vida que siempre renace,<br>
+                                en el ciclo eterno de la flor y el sol.</p><br>
                         </div>
-                    </div>
+                   
                 </article>
 
                 <article class="col-md-4 mb-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">En la Sombra del Tigre</h3>
-                            <p class="card-text">El tigre, majestuoso y feroz, se esconde en la selva, un recordatorio de la fuerza que reside en la calma.</p>
+                  
+                        <div class="card bg-danger-subtle mx-auto p-2">
+                            <h3 class="card-title fw-bold text-center mx-auto p-2">En la Sombra del Tigre</h3> <br>
+                            <p class="card-text text-center">
+                                En la sombra del tigre, majestuoso y feroz,<br>
+                                su figura se dibuja entre hojas y sombras,<br>
+                                en la espesura, su presencia es un enigma,<br>
+                                donde el murmullo del viento cuenta historias antiguas.</p>
+                                <p class="card-text  text-center">
+                                Sus ojos, dos faros que brillan en la penumbra,<br>
+                                reflejan la sabiduría de siglos pasados,<br>
+                                mientras se desliza con pasos de seda,<br>
+                                cada movimiento, un susurro de poder latente.</p>
+                                <p class="card-text  text-center">
+                                La selva murmura secretos en su andar,<br>
+                                las aves callan, y el tiempo parece detenerse,<br>
+                                en un instante, el tigre se convierte en sombra,<br>
+                                una sinfonía de fuerza y serenidad entrelazada.</p>
+                                <p class="card-text  text-center">
+                                Cada hoja que cruje bajo su paso elegante,<br>
+                                es un eco de la vida que late en el bosque,<br>
+                                y en su mirada, un reflejo de la naturaleza,<br>
+                                recordándonos que el verdadero poder se encuentra en el silencio.</p>
+                                <p class="card-text  text-center">
+                                Así, el tigre habita en su reino oculto,<br>
+                                con el majestuoso andar de un rey en su trono,<br>
+                                y en la penumbra de la selva que lo abraza,<br>
+                                nos enseña que la fuerza más grande es la calma.</p><br>
                         </div>
-                    </div>
+                    
                 </article>
             </div>
-        </section>
+        
     </main>
 
-    <footer>
+    <footer class="bg-secondary text-center py-1"> <!-- Pie de página -->
         <address>
-            <p>Para contactarse con nosotros, escribir a:                   
-                <a href="mailto:mariela.peters@gmail.com">mariela.peters@gmail.com</a>
+            <p class="text-white letras">Para contactarse con nosotros escribir a                    
+                <a class="text-white" href="mailto:mariela.peters@gmail.com">mariela.peters@gmail.com</a>
             </p>
         </address>
     </footer>
+
 
     <!-- Bootstrap JS y Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

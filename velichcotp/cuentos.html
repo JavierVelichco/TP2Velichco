@@ -18,50 +18,28 @@
     <!-- Vinculo a CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./css/estilos.css">
-    
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-        }
-        header {
-            background: #007bff;
-            color: white;
-            padding: 10px 0;
-        }
-        header nav a {
-            color: white;
-            text-decoration: none;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #007bff;
-            color: white;
-        }
-        footer a {
-            color: white;
-        }
-    </style>
+  
 </head>
 
-<body>
+<body class="d-flex flex-column vh-100" style="background-image: url('./img/fondo.png'); background-size: cover; background-position: center;">
 
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="bg-primary text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary "> <!-- Barra de navegación de Bootstrap -->
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Tigre y Mariposa</a>
+                <a class="navbar-brand" href="index.html">Tigre y Mariposa</a> <!-- Nombre de la marca -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span> <!-- Icono del botón para dispositivos móviles -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav"> <!-- Lista de navegación -->
                         <li class="nav-item"><a class="nav-link" href="poemas.html">Poemas</a></li>
                         <li class="nav-item"><a class="nav-link" href="cuentos.html">Cuentos</a></li>
                         <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
                         <li class="nav-item"><a class="nav-link" href="exposiciones.html">Exposiciones</a></li>
+                        <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="autorpagina.html">Autor</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,53 +47,171 @@
     </header>
 
     <main class="container my-5">
-        <h1 class="text-center">Cuentos</h1>
+        <h1 class="fw-bold text-center">Cuentos destacados</h1>
+        <br>
 
         <article class="mb-4">
-            <h2>¡Bienvenidos!</h2>
-            <p>Este es un rincón para la imaginación, donde las palabras cobran vida a través de cuentos cautivadores.</p>
+           
+            <h4 class= "fw-bold text-center">
+                Aquí, la imaginación florece y las palabras danzan en el aire, creando historias que cautivan el corazón y alimentan el alma. Sumérgete en relatos llenos de magia,
+                 aventuras y emociones, donde cada cuento es una puerta abierta a un mundo nuevo. Déjate llevar por la narrativa y descubre la belleza de lo que las palabras pueden construir.
+                  ¡Tu viaje literario comienza aquí!</h4>
         </article>
+        <br>
 
-        <section>
-            <h2>Cuentos Destacados</h2>
+           
             <div class="row">
                 <article class="col-md-4 mb-4">
                     <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">El Viaje del Tigre</h3>
-                            <p class="card-text">Un tigre solitario emprende un viaje a través de la selva en busca de su lugar en el mundo.</p>
+                        <div class="card-body bg-warning-subtle">
+                            <h3 class="card-title text-center">El Viaje del Tigre</h3>
+                            <br>
+                            <p class="card-text">
+                                En lo profundo de la selva, donde el sol apenas podía penetrar el espeso dosel de hojas verdes, vivía un tigre solitario llamado Ranjit. Su pelaje, de un naranja vibrante salpicado de rayas negras, lo hacía parecer una obra maestra de la naturaleza, pero su corazón estaba lleno de un vacío que la majestuosidad de su aspecto no podía llenar.
+                            </p>
+                            
+                            <p class="card-text">
+                                Ranjit pasaba sus días vagando entre los árboles milenarios, observando a los otros animales. Veía a las manadas de ciervos correr libres, a las aves cantando melodías alegres y a los monos riendo entre sí. Sin embargo, él siempre se sentía diferente, como si no perteneciera a ese lugar. La soledad lo acompañaba en cada paso que daba, y el eco de su propio rugido resonaba con tristeza en su pecho.
+                            </p>
+                            
+                            <p class="card-text">
+                                Un día, mientras se recostaba sobre una roca caliente, un viejo búho se posó a su lado. "¿Por qué luces tan triste, joven tigre?" preguntó el búho con su voz profunda y sabia.
+                            </p>
+                            
+                            <p class="card-text">
+                                "Busco mi lugar en el mundo, amigo", respondió Ranjit. "No sé dónde encajo. Todos parecen tener compañía, mientras yo permanezco solo."
+                            </p>
+                            
+                            <p class="card-text">
+                                El búho, que había visto muchas estaciones pasar, le dio un consejo. "El viaje es lo que te enseñará, Ranjit. A veces, debes salir de tu hogar para encontrar lo que buscas."
+                            </p>
+                            
+                            <p class="card-text">
+                                Inspirado por las palabras del búho, Ranjit decidió emprender un viaje a través de la selva. Caminó durante días, cruzando ríos caudalosos y ascendiendo montañas cubiertas de neblina. Conoció a una tortuga que le habló de la importancia de la paciencia y a un grupo de pájaros que lo llevaron a un claro donde las flores silvestres florecían en abundancia. Cada encuentro le dejó una lección que atesoró en su corazón.
+                            </p>
+                            
+                            <p class="card-text">
+                                En su travesía, Ranjit también enfrentó desafíos. Una tormenta lo sorprendió un día, y se refugió en una cueva oscura, temiendo que nunca saldría de allí. Sin embargo, mientras se quedó en la cueva, escuchó el canto de un grupo de murciélagos. En lugar de temerles, se unió a su melodía, y pronto se sintió reconfortado.
+                            </p>
+                            
+                            <p class="card-text">
+                                Finalmente, después de semanas de búsqueda, Ranjit llegó a un gran lago que reflejaba el cielo azul. Al mirar su propio reflejo, se dio cuenta de algo importante: no era solo un tigre solitario, sino un tigre que había aprendido a ser fuerte, a ser paciente, y a encontrar belleza en la vida. Había crecido en su viaje y, más importante aún, había encontrado un sentido de pertenencia dentro de sí mismo.
+                            </p>
+                            
+                            <p class="card-text">
+                                Ranjit regresó a su hogar en la selva, pero ya no se sentía solo. Ahora sabía que podía ser un amigo para aquellos que encontrara, compartiendo las historias de su viaje y las lecciones que había aprendido. En su corazón, llevaba consigo un nuevo propósito: ser un guía para otros que también buscaran su lugar en el mundo.
+                            </p>
+                            
+                            <p class="card-text">
+                                Desde aquel día, el tigre que una vez fue solitario se convirtió en un símbolo de esperanza en la selva, recordando a todos que a veces el viaje más importante es el que hacemos dentro de nosotros mismos.
+                            </p>
                         </div>
                     </div>
                 </article>
 
                 <article class="col-md-4 mb-4">
                     <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">La Mariposa Dorada</h3>
-                            <p class="card-text">Una mariposa dorada revela secretos de la naturaleza que cambian la vida de un niño para siempre.</p>
+                        <div class="card-body bg-light">
+                            <h3 class="card-title text-center">La Mariposa Dorada</h3>
+                            <br>
+                            <p class="card-text">
+                                En un pequeño pueblo rodeado de montañas y ríos cristalinos, vivía un niño llamado Mateo. Desde muy joven, Mateo había sentido una profunda conexión con la naturaleza. Pasaba sus días explorando los campos, recolectando flores y observando a los animales que habitaban el bosque cercano. Sin embargo, su vida cambió para siempre el día en que encontró a la mariposa dorada.
+                            </p>
+                        
+                            <p class="card-text">
+                                Una tarde, mientras jugaba cerca de un arroyo, Mateo vio una brillante luz que danzaba entre los árboles. Intrigado, se acercó y, para su asombro, descubrió una mariposa dorada. Sus alas brillaban como el oro bajo el sol, y Mateo quedó maravillado por su belleza. La mariposa, como si pudiera sentir su admiración, se posó suavemente en su hombro.
+                            </p>
+                        
+                            <p class="card-text">
+                                A medida que Mateo la miraba, la mariposa comenzó a hablarle. “Soy la guardiana de los secretos de la naturaleza”, dijo con una voz suave como el viento. “He venido a mostrarte la magia que reside en el mundo que te rodea”. Con una mezcla de asombro y alegría, Mateo aceptó la invitación de la mariposa para emprender un viaje extraordinario.
+                            </p>
+                        
+                            <p class="card-text">
+                                Juntos volaron a través del bosque, sobre flores multicolores y ríos burbujeantes. La mariposa dorada le mostró a Mateo cómo las plantas hablaban entre sí, compartiendo nutrientes y apoyándose unas a otras. Le enseñó a escuchar el susurro de las hojas y a observar el delicado equilibrio que existía en la naturaleza.
+                            </p>
+                        
+                            <p class="card-text">
+                                En su recorrido, la mariposa le reveló los secretos de los animales que habitaban el bosque. “Cada criatura tiene su papel”, explicó. “Los pájaros cantan para avisar a los demás, los ciervos se cuidan mutuamente y hasta los insectos tienen sus propias comunidades”. Mateo escuchaba con atención, asimilando cada lección con el corazón abierto.
+                            </p>
+                        
+                            <p class="card-text">
+                                La mariposa dorada también le mostró cómo cuidar de la tierra. Le enseñó a plantar semillas, a regar las flores y a recoger la basura que encontraba. “La naturaleza es un regalo”, dijo. “Si la cuidas, te devolverá su belleza y abundancia”. Mateo prometió hacer su parte y se sintió inspirado por la sabiduría de su amiga alada.
+                            </p>
+                        
+                            <p class="card-text">
+                                Después de un día lleno de aventuras, la mariposa dorada llevó a Mateo de regreso al arroyo donde se habían encontrado. “Recuerda siempre lo que has aprendido”, le dijo antes de despegar hacia el cielo. “La magia de la naturaleza está en ti, y tú eres parte de ella”. Mateo la observó volar, sintiendo que algo profundo había cambiado en su interior.
+                            </p>
+                        
+                            <p class="card-text">
+                                A partir de ese día, Mateo se convirtió en un defensor de la naturaleza. Compartió lo que había aprendido con sus amigos y familiares, organizando limpiezas en el pueblo y plantando árboles. La mariposa dorada había dejado una huella imborrable en su vida, y su espíritu seguía vivo en cada acción que tomaba.
+                            </p>
+                        
+                            <p class="card-text">
+                                Con el tiempo, la historia de la mariposa dorada se convirtió en una leyenda en el pueblo. Los niños solían buscarla en los días soleados, deseando escuchar sus secretos. Aunque la mariposa nunca regresó, Mateo sabía que su mensaje continuaba en cada rincón de la naturaleza, recordando a todos la importancia de cuidarla.
+                            </p>
+                        
+                            <p class="card-text">
+                                Y así, en el pequeño pueblo rodeado de montañas, la mariposa dorada vivió para siempre en los corazones de aquellos que creían en la magia de la naturaleza y en la sabiduría de un niño que se atrevió a escuchar.
+                            </p>
                         </div>
                     </div>
                 </article>
 
                 <article class="col-md-4 mb-4">
                     <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">El Jardín Secreto</h3>
-                            <p class="card-text">Un jardín escondido alberga historias de amor y amistad que florecen con cada estación.</p>
+                        <div class="card-body bg-primary-subtle">
+                            <h3 class="card-title text-center">El Jardín Secreto</h3>
+                            <br>
+                            <p class="card-text">
+                                En un rincón olvidado de la ciudad, donde los edificios altos no podían alcanzar la luz del sol, existía un jardín escondido. Este jardín, cubierto de enredaderas y flores silvestres, era un lugar mágico, conocido solo por unos pocos afortunados. Aquellos que se aventuraban a entrar descubrían un mundo lleno de colores vibrantes y aromas embriagadores, donde el tiempo parecía detenerse.
+                            </p>
+                            
+                            <p class="card-text">
+                                Las estaciones danzaban en el jardín, cada una trayendo su propio encanto. En primavera, las flores estallaban en un festival de colores, y los pájaros regresaban para cantar dulces melodías. En verano, el calor del sol bañaba el jardín, y las risas de los niños se escuchaban mientras jugaban entre los arbustos. En otoño, las hojas caían como confeti dorado, y el aire fresco traía consigo la promesa de nuevas aventuras. Y en invierno, aunque el frío cubría todo con una manta blanca, el jardín seguía vivo en los corazones de quienes lo amaban.
+                            </p>
+                            
+                            <p class="card-text">
+                                Entre los árboles, dos mejores amigos, Sofía y Lucas, habían encontrado su refugio. Desde pequeños, habían explorado cada rincón del jardín, descubriendo secretos y creando recuerdos. Allí, compartieron sus sueños, sus miedos y sus risas. Era el lugar donde habían aprendido a montar en bicicleta, a construir fuertes con ramas y a contar historias bajo las estrellas.
+                            </p>
+                            
+                            <p class="card-text">
+                                A medida que crecían, su amistad se volvía más profunda. En el jardín, Sofía plantaba flores y Lucas construía pequeños puentes de madera. Juntos, cuidaban de su pequeño mundo, asegurándose de que siempre floreciera. Sin embargo, un día, la familia de Lucas decidió mudarse a otra ciudad. El jardín, que había sido su santuario, se convirtió en un lugar de despedida.
+                            </p>
+                            
+                            <p class="card-text">
+                                En su última tarde juntos, los amigos se sentaron bajo su árbol favorito, el sauce llorón. Sofía, con lágrimas en los ojos, le dijo a Lucas: "Prometamos que siempre recordaremos este lugar y lo que hemos vivido aquí". Lucas asintió, prometiendo que, a pesar de la distancia, su amistad permanecería tan fuerte como las raíces del árbol bajo el cual se sentaban.
+                            </p>
+                            
+                            <p class="card-text">
+                                Con el tiempo, Sofía siguió cuidando del jardín, plantando nuevas flores y recordando cada momento compartido con Lucas. Cada primavera traía un nuevo renacer, y aunque Lucas no estaba físicamente presente, sentía su espíritu en cada rincón del jardín. Las historias de amor y amistad florecían con cada estación, entrelazándose con la naturaleza que los rodeaba.
+                            </p>
+                            
+                            <p class="card-text">
+                                Años más tarde, cuando Sofía ya era una joven adulta, recibió una carta de Lucas. Había vuelto a la ciudad y deseaba reunirse en su jardín secreto. Con el corazón latiendo de emoción, Sofía corrió hacia el jardín, donde había pasado tantas horas de su infancia. Al llegar, vio a Lucas esperándola, y en ese momento, supo que, aunque la vida los había llevado por caminos diferentes, su amistad siempre encontraría el camino de regreso.
+                            </p>
+                            
+                            <p class="card-text">
+                                Allí, en el jardín que había sido testigo de su crecimiento y sus sueños, Sofía y Lucas reavivaron su conexión, compartiendo historias y risas. El jardín se llenó de vida una vez más, un recordatorio de que, a pesar de la distancia y el paso del tiempo, las verdaderas amistades siempre florecen.
+                            </p>
+                            
+                            <p class="card-text">
+                                Y así, el jardín secreto siguió siendo un refugio, un lugar donde las historias de amor y amistad continuaban creciendo, floreciendo con cada nueva estación que pasaba.
+                            </p>
                         </div>
                     </div>
                 </article>
             </div>
-        </section>
+       
     </main>
 
-    <footer>
+    <footer class="bg-secondary text-center py-3"> <!-- Pie de página -->
         <address>
-            <p>Para contactarse con nosotros, escribir a:                   
-                <a href="mailto:mariela.peters@gmail.com">mariela.peters@gmail.com</a>
+            <p class="text-white letras">Para contactarse con nosotros escribir a                    
+                <a class="text-white" href="mailto:mariela.peters@gmail.com">mariela.peters@gmail.com</a>
             </p>
         </address>
     </footer>
+
 
     <!-- Bootstrap JS y Popper.js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
