@@ -10,34 +10,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins&display=swap" rel="stylesheet">
 </head>
-<style>
-     
-    .success-message {
-        display: none;
-        margin-top: 20px;
-        text-align: center;
-        color: green;
-        font-size: 1.5rem;
-    }
-</style>
-<body>
+<body class="d-flex flex-column vh-100" style="background-image: url('./img/fondo.png'); background-size: cover; background-position: center;">
 
     <header class="bg-primary text-white">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary "> <!-- Barra de navegación de Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> 
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Tigre y Mariposa</a> <!-- Nombre de la marca -->
+                <a class="navbar-brand" href="index.html">Tigre y Mariposa</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span> <!-- Icono del botón para dispositivos móviles -->
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav"> <!-- Lista de navegación -->
+                    <ul class="navbar-nav">
                         <li class="nav-item"><a class="nav-link" href="poemas.html">Poemas</a></li>
                         <li class="nav-item"><a class="nav-link" href="cuentos.html">Cuentos</a></li>
                         <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
                         <li class="nav-item"><a class="nav-link" href="exposiciones.html">Exposiciones</a></li>
                         <li class="nav-item"><a class="nav-link" href="formulario.html">Formulario</a></li>
                         <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+                        <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
                         <li class="nav-item"><a class="nav-link" href="autorpagina.html">Autor</a></li>
                     </ul>
                 </div>
@@ -45,68 +35,56 @@
         </nav>
     </header>
 
-<div class="container mt-4">
-    <h2>Formulario de Contacto</h2>
-    <form id="contactForm">
-        <div class="mb-3">
-            <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required>
-        </div>
-        <div class="mb-3">
-            <label for="apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" id="apellido" name="apellido" required>
-        </div>
-        <div class="mb-3">
-            <label for="edad" class="form-label">Edad</label>
-            <input type="number" class="form-control" id="edad" name="edad" required>
-        </div>
-        <div class="mb-3">
-            <label for="direccion" class="form-label">Dirección</label>
-            <input type="text" class="form-control" id="direccion" name="direccion" required>
-        </div>
-        <div class="mb-3">
-            <label for="localidad" class="form-label">Localidad</label>
-            <input type="text" class="form-control" id="localidad" name="localidad" required>
-        </div>
-        <div class="mb-3">
-            <label for="codigoPostal" class="form-label">Código Postal</label>
-            <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" required>
-        </div>
-        <div class="mb-3">
-            <label for="telefono" class="form-label">Teléfono</label>
-            <input type="tel" class="form-control" id="telefono" name="telefono" required>
-        </div>
-        <div class="mb-3">
-            <label for="obra" class="form-label">Nombre de la Obra que desea Comprar</label>
-            <input type="text" class="form-control" id="obra" name="obra" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-    </form>
-    <div class="success-message" id="successMessage">Eres el dueño de una bella obra de arte. ¡Disfrútala!</div>
-</div>
+    <div class="container mt-4 flex-fill">
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" required>
+            </div>
+            <div class="mb-3">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="number" class="form-control" id="edad" name="edad" required min="18">
+             </div>
+            <div class="mb-3">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="direccion" name="direccion" required>
+              </div>
+            <div class="mb-3">
+                <label for="localidad" class="form-label">Localidad</label>
+                <input type="text" class="form-control" id="localidad" name="localidad" required>
+            </div>
+            <div class="mb-3">
+                <label for="codigoPostal" class="form-label">Código Postal</label>
+                <input type="text" class="form-control" id="codigoPostal" name="codigoPostal" required pattern="\d{4}">
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" required pattern="\d{10}">
+            </div>
+            <div class="mb-3">
+                <label for="obra" class="form-label">Nombre de la Obra que desea adquirir</label>
+                <input type="text" class="form-control" id="obra" name="obra" required>
+              </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+        <div class="success-message d-none text-center h2 text-success" id="successMessage">¡Felicidades! Ya casi eres el dueño de una bella obra de arte, un asesor nuestro estará contactándote para mejorar tu experiencia.</div>
+    </div>
 
-<footer class="bg-secondary text-center py-1"> <!-- Pie de página -->
-    <address>
-        <p class="text-white letras">Para contactarse con nosotros escribir a                    
-            <a class="text-white" href="mailto:mariela.peters@gmail.com">mariela.peters@gmail.com</a>
-        </p>
-    </address>
-</footer>
+    <footer class="bg-secondary text-center py-1">
+        <address>
+            <p class="text-white letras">Para contactarse con nosotros escribir a                    
+                <a class="text-white" href="mailto:mariela.peters@gmail.com">mariela.peters@gmail.com</a>
+            </p>
+        </address>
+    </footer>
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
-
-        // Muestra el mensaje de éxito
-        document.getElementById('successMessage').style.display = 'block';
-
-        // Redirige al usuario después de 3 segundos
-        setTimeout(function() {
-            window.location.href = 'index.html';
-        }, 5000);
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/validar.js"></script>
+  
 </body>
 </html>

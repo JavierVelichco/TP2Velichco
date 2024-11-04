@@ -4,7 +4,7 @@
   "description": "Mi nombre es javier Velichco, DNI 28045376.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "purgecss --css css/custom.css... --content index.html -o css/reducido.css"
   },
   "keywords": [],
   "author": "",
